@@ -62,9 +62,13 @@ Routesintro::Application.routes.draw do
 
 #LETS LEARN SOME ROUTES!!!!
 
+# from within your app directory, type 'rake routes', 
+# or while your app is running, type the following into your browser: 
+# http://localhost:3000/rails/info/routes
+
 #these are called named routes
 
-#root 'home#index'
+#root 'cats#home'
 
 #get 'cats' => 'cats#index'
 
@@ -100,6 +104,7 @@ delete 'cats/:id' => 'cats#destroy'
 
 #resources :cats, as: 'dogs'
 
+#except can be subsituted with only
 #resources :cats, except: :destroy
 
 #resources :cats, except: [:destroy, :index, :show, :create]

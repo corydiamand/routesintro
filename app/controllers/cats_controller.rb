@@ -3,6 +3,10 @@ class CatsController < ApplicationController
 
   # GET /cats
   # GET /cats.json
+
+  def home
+  end
+
   def index
     @cats = Cat.all
   end
