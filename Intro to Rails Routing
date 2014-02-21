@@ -1,0 +1,106 @@
+Intro to Rails Routing
+
+The code for this lesson is available here:
+
+https://github.com/corydiamand/routesintro
+
+
+
+
+REST- Representational State Transfer
+
+A system of interaction between things on the web. This system works well with the HTTP request verbs.
+
+
+Requests:
+	www.google.com/timeofday
+	www.books.com/books/huckfinn
+	www.facebook.com/friends
+
+Resources:
+	The current time of day
+	The entire text of Huckleberry Finn
+	A list of a user's friends
+
+
+
+Diagram of routes
+
+
+Routes 
+
+M  C  V
+
+
+
+CRUD
+c - crete
+r - read
+u - update
+d - delete
+
+
+
+HTTP VERBS
+
+DELETE - The DELETE method requests that the origin server delete the resource
+
+GET	- The GET method means retrieves whatever information (in the form of an entity) is identified by the Request-URI.
+
+POST - The POST method is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line.
+
+PUT/PATCH - The PUT & PATCH methods request that the enclosed entity be stored under the supplied Request-URI.
+
+
+
+
+Controller Action verbs
+
+Index
+Show
+Destroy
+New
+Create
+Edit
+Update
+
+
+
+ROUTING:
+
+Routing takes a request (usually from a browser), and interprets that request, communicating with controllers in the app to handle the request and the serve those resources back to the client (browser).
+
+
+
+
+
+Some things that will help you learn more about routes:
+
+
+If you open the terminal in your computer, while within the folder of your rails app, and type 
+
+'rake routes'
+
+you will see a list of routes that are currently accessible within your app.
+
+The boilerplate config/routes.rb file has some simple examples of different ways to structure your routes.
+
+
+
+All your routes live in config/routes.rb in your rails app
+
+When a request comes in, rails starts at the top of your routes.rb file and tries to match the incoming request to one of your routes, working its way all the way down to the bottom of the file. 
+
+Routes have their own very unique syntax, so don't be intimidated if it seems foreign at first!
+
+
+Further reading for after the lesson:
+
+http://guides.rubyonrails.org/routing.html
+
+
+
+
+
+
+
